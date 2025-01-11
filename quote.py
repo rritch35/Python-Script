@@ -4,5 +4,8 @@
 import random #going to need random in order to select a random quote
 
 def get_quote()
-    quotes = [ ("Any sufficiently advanced technology is indistinguishable from magic."), ("Arthur C. Clarke")
+    quotes = [ 
+            ("Any sufficiently advanced technology is indistinguishable from magic."), ("Arthur C. Clarke"),
+            ("The best way to predict the future is to invent it." ), ("Alan Kay"),
+            ("Stay hungry, stay foolish.")
     ]
