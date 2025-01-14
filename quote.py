@@ -3,9 +3,17 @@
 
 import random #going to need random in order to select a random quote
 
-def get_quote()
-    quotes = [ 
-            ("Any sufficiently advanced technology is indistinguishable from magic."), ("Arthur C. Clarke"),
-            ("The best way to predict the future is to invent it." ), ("Alan Kay"),
-            ("Stay hungry, stay foolish.")
-    ]
+
+quotes = [
+    {"quote": "Any sufficiently advanced technology is indistinguishable from magic.", "author": "Arthur C. Clarke"},
+    {"quote": "The best way to predict the future is to invent it.", "author": "Alan Kay"},
+    {"quote": "Stay hungry, stay foolish.", "author": "Steve Jobs"}
+]
+def get_quote():
+    return random.choice(quotes)
+def display_quote():
+
+    random_quote = random.choice(quotes)
+    print(f'"{random_quote["quote"]}"')
+    print(f'– {random_quote["author"]}')
+display_quote()
